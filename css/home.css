@@ -1,0 +1,140 @@
+html {
+	background-image: url(../img/index.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+}
+
+header {
+	background-color: rgba(0, 0, 0, .35);
+	box-shadow: none;
+}
+
+nav a:hover {
+	color: rgba(248, 248, 248, .35);
+}
+
+h1 {
+	margin: 0;
+	color: #f8f8f8;
+	font-size: 3rem;
+}
+
+h2 {
+	margin: 0;
+	color: #f8f8f8;
+	font-size: 2rem;
+	font-family: museo-slab;
+	font-weight: 900;
+}
+
+p {
+	margin: 0;
+	color: #f8f8f8;
+	font-size: 1.5rem;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: .5rem 0;
+}
+
+.tagline p {
+	font-size: 0;
+}
+
+
+.driver {
+	width: 24rem;
+	position: absolute;
+	left: 5%;
+	top: 16%;
+}
+
+.rest {
+	width: 24rem;
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+}
+
+main a {
+	text-decoration: none;
+}
+
+main a:hover h1 {
+	color: rgba(248, 248, 248, .50);
+}
+
+main a:hover h2 {
+	color: rgba(248, 248, 248, .50);
+}
+
+main a:hover p {
+	color: rgba(248, 248, 248, .50);
+}
+
+.ee {
+	width: 80px;
+	position: absolute;
+	top: 30%;
+	right: 15%;
+	opacity: 0;
+}
+
+a:hover .ee {
+	opacity: .35;
+}
+
+
+
+@media only screen and (min-width: 38rem) {
+
+h1 {
+	font-size: 4.5rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+p {
+	font-size: 1.8rem;
+}
+
+.driver {
+	width: 25rem;
+
+}
+
+.rest {
+	width: 32rem;
+}
+
+
+
+}	
+
+
+@media only screen and (min-width: 50rem) {
+
+.tagline {
+	margin: 0;
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+}
+
+.tagline p {
+	font-size: 2rem;
+	font-weight: 900;
+	width: 20rem;
+	text-align: right;
+}
+
+}
