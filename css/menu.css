@@ -24,9 +24,11 @@ nav ol {
 	list-style: none;
 	width: 20rem;
 	position: fixed;
-	top: -5rem;
+	/*top: -5rem;*/
+	top: 50%;
 	left: 50%;
-	transform: translateX(-50%);
+	/* transform: translateX(-50%); */
+	transform: translate(-50%,-50%);
 }
 
 nav li {
@@ -34,6 +36,8 @@ nav li {
 	width: 100%;
 	height: 10rem;
 	margin: 1rem 0;
+	/* New Rule */
+	position: relative;
 }
 
 nav li:before {
@@ -43,8 +47,10 @@ nav li:before {
 	font-family: museo-slab;
 	font-weight: bold;
 	font-style: italic;
-	position: relative;
-	top: 10.5rem;
+	/*position: relative;*/
+	position: absolute;
+	/* top: 10.5rem; */
+	bottom: -1.25rem;
 	left: 1.3rem;
 }
 
@@ -117,21 +123,27 @@ nav a:hover .fa-times {
 
 
 
-@media only screen and (min-width: 90rem) {
+@media screen and (min-width: 90rem) {
 
 nav ol {
-	width: 88rem;
+	/* width: 88rem;
 	position: fixed;
 	top: 30%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-
+	transform: translate(-50%, -50%); */
+	width: 90%;
 }
 
 nav li {
-	width: 20rem;
+	/* width: 20rem; */
+	width: 23.5%;
 	float: left;
-	margin: 1rem;
+	/* margin: 1rem; */
+	margin-right: 2%;
+}
+
+nav li:last-child {
+	margin-right: 0; /* no right margin for the last item */
 }
 
 
